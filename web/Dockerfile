@@ -1,5 +1,5 @@
-# use a specific version of Nginx:
-FROM nginx:alpine
+# spezifizierte Nginx Version verwenden
+FROM nginx:1.21.-alpine
 
-# overwrite the default HTML doc:
+# default index.html mit spezifischer überschreiben
 COPY index.html /usr/share/nginx/html/
